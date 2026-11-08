@@ -39,11 +39,11 @@ scenarios/mrsu_bremen2/        Bremen segment, ~5.5 km2 (initial validation)
 scenarios/mrsu_bremen3/        Bremen segment, ~10.25 km2 (main evaluation scenario)
 scenarios/mrsu_fullcity/       whole city of Bremen, ~355 km2, one unsegmented coordinator
 scenarios/bremen3_hotspot_patch/  Call-for-Help hotspot experiment
+scenarios/mrsu_lust/           Luxembourg (LuST): 15 km2 region of interest and 20.25 km2 segment, with the run scripts run_lust_*.sh
 patches/artery-src-changes.diff   changes to the Artery sources (VehicleController.cc, BasicNodeManager.cc, scenarios/CMakeLists.txt)
 tools/                         run / batch / analysis scripts
 env_versions.txt               software versions used for all results
 ```
-Luxembourg (LuST) scenarios: **not yet included**; they are added in a separate commit.
 
 ## Installation
 
@@ -58,7 +58,7 @@ Luxembourg (LuST) scenarios: **not yet included**; they are added in a separate 
 5. **Add the CAMRA scenarios and apply the source patch**
    ```bash
    cd /path/to/this/repo
-   cp -r scenarios/mrsu_bremen2 scenarios/mrsu_bremen3 scenarios/mrsu_fullcity scenarios/bremen3_hotspot_patch ~/artery/scenarios/
+   cp -r scenarios/mrsu_bremen2 scenarios/mrsu_bremen3 scenarios/mrsu_fullcity scenarios/bremen3_hotspot_patch scenarios/mrsu_lust ~/artery/scenarios/
    gunzip -k ~/artery/scenarios/mrsu_fullcity/mrsu_fullcity.net.xml.gz   # the full-city network is stored compressed (the unpacked file is 293 MB)
    cd ~/artery
    git apply --check /path/to/this/repo/patches/artery-src-changes.diff   # dry run
