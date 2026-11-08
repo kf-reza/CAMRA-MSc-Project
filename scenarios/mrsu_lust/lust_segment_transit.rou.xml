@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+<vehicle id="7DEtoLU.406" type="passenger1" depart="1.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7LUtoDE.374" type="passenger2a" depart="3.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7LUtoBE.355" type="passenger4" depart="6.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7DEtoLU.407" type="passenger3" depart="12.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7LUtoBE.356" type="passenger4" depart="19.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7FRtoLU.377" type="passenger1" depart="21.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7LUtoFR.371" type="passenger2b" depart="26.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7DEtoLU.409" type="passenger1" depart="26.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7BEtoLU.393" type="passenger2b" depart="29.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7DEtoLU.413" type="passenger2b" depart="33.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7LUtoBE.358" type="passenger1" depart="36.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7LUtoDE.377" type="passenger2a" depart="37.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7FRtoLU.379" type="passenger2b" depart="41.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7FRtoLU.380" type="passenger4" depart="42.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7LUtoFR.372" type="passenger2b" depart="45.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7DEtoLU.417" type="passenger2b" depart="56.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7BEtoLU.398" type="passenger5" depart="67.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7LUtoDE.379" type="passenger1" depart="67.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7LUtoFR.375" type="passenger3" depart="69.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7FRtoLU.382" type="passenger3" depart="70.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7LUtoBE.360" type="passenger3" depart="73.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7LUtoFR.376" type="passenger2a" depart="75.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7DEtoLU.420" type="passenger3" depart="76.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7LUtoFR.377" type="passenger2b" depart="78.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7LUtoBE.361" type="passenger2a" depart="80.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7LUtoFR.378" type="passenger2a" depart="80.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.1" type="passenger3" depart="80.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7LUtoFR.380" type="passenger2b" depart="91.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7LUtoFR.381" type="passenger3" depart="93.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7LUtoFR.382" type="passenger1" depart="94.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.2" type="passenger2a" depart="97.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7BEtoLU.401" type="passenger2a" depart="101.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.3" type="passenger4" depart="101.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7BEtoLU.402" type="passenger1" depart="102.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7LUtoFR.384" type="passenger2b" depart="106.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="7BEtoLU.403" type="passenger2b" depart="113.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7BEtoLU.404" type="passenger1" depart="115.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7LUtoFR.385" type="passenger2b" depart="118.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.5" type="passenger1" depart="119.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7LUtoBE.364" type="passenger2b" depart="124.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.6" type="passenger3" depart="131.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.1" type="passenger1" depart="132.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.8" type="passenger1" depart="133.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="7BEtoLU.405" type="passenger1" depart="136.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.0" type="passenger1" depart="137.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.7" type="passenger4" depart="142.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="7BEtoLU.407" type="passenger2b" depart="147.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7BEtoLU.408" type="passenger1" depart="153.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="7BEtoLU.409" type="passenger1" depart="160.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.2" type="passenger1" depart="163.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.9" type="passenger2b" depart="166.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.13" type="passenger2a" depart="169.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoFR.5" type="passenger3" depart="181.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.6" type="passenger2b" depart="186.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.15" type="passenger2b" depart="195.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8BEtoLU.0" type="passenger2a" depart="197.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.8" type="passenger1" depart="199.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.7" type="passenger1" depart="205.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.6" type="passenger2a" depart="207.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.16" type="passenger1" depart="210.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoBE.10" type="passenger3" depart="214.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.14" type="passenger2a" depart="218.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8FRtoLU.9" type="passenger5" depart="220.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.16" type="passenger1" depart="224.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8BEtoLU.2" type="passenger1" depart="228.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.12" type="passenger2b" depart="230.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.15" type="passenger2a" depart="235.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.17" type="passenger1" depart="238.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoBE.16" type="passenger3" depart="239.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.18" type="passenger2a" depart="240.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8BEtoLU.3" type="passenger2a" depart="241.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8FRtoLU.12" type="passenger2b" depart="242.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.17" type="passenger1" depart="243.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.18" type="passenger1" depart="246.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoFR.15" type="passenger2b" depart="248.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.20" type="passenger2a" depart="251.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8LUtoFR.16" type="passenger1" depart="253.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.14" type="passenger3" depart="260.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.21" type="passenger2a" depart="260.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.21" type="passenger2a" depart="266.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoFR.18" type="passenger5" depart="267.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.6" type="passenger5" depart="268.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.22" type="passenger1" depart="269.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.23" type="passenger2b" depart="274.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoFR.19" type="passenger2a" depart="275.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.7" type="passenger1" depart="279.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.22" type="passenger1" depart="287.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.19" type="passenger2a" depart="288.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8BEtoLU.9" type="passenger5" depart="289.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8FRtoLU.20" type="passenger1" depart="294.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8BEtoLU.10" type="passenger1" depart="298.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.25" type="passenger1" depart="304.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.21" type="passenger1" depart="304.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.27" type="passenger1" depart="310.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.25" type="passenger1" depart="316.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoDE.31" type="passenger1" depart="317.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8BEtoLU.14" type="passenger1" depart="318.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.32" type="passenger1" depart="326.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8FRtoLU.23" type="passenger2b" depart="327.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.32" type="passenger2b" depart="329.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.33" type="passenger2b" depart="337.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.26" type="passenger2b" depart="348.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.34" type="passenger3" depart="348.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8LUtoBE.34" type="passenger5" depart="354.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.18" type="passenger2a" depart="356.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.30" type="passenger1" depart="359.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.29" type="passenger1" depart="363.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.27" type="passenger2b" depart="367.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.37" type="passenger2b" depart="372.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.31" type="passenger4" depart="374.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8DEtoLU.32" type="passenger1" depart="376.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8DEtoLU.33" type="passenger2a" depart="385.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoBE.39" type="passenger3" depart="390.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.32" type="passenger1" depart="396.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8BEtoLU.22" type="passenger1" depart="396.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.40" type="passenger3" depart="397.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoFR.33" type="passenger3" depart="398.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoFR.34" type="passenger1" depart="402.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.36" type="passenger1" depart="402.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8DEtoLU.37" type="passenger1" depart="407.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.38" type="passenger2b" depart="409.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8FRtoLU.39" type="passenger2a" depart="411.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.39" type="passenger1" depart="414.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoDE.37" type="passenger2a" depart="417.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8LUtoFR.38" type="passenger1" depart="419.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.41" type="passenger2a" depart="427.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoDE.41" type="passenger3" depart="427.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.41" type="passenger2b" depart="428.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoDE.44" type="passenger2b" depart="435.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8LUtoFR.41" type="passenger1" depart="436.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.25" type="passenger2a" depart="437.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.46" type="passenger3" depart="448.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.45" type="passenger1" depart="463.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8BEtoLU.26" type="passenger2b" depart="465.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.43" type="passenger3" depart="470.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.27" type="passenger2a" depart="472.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8FRtoLU.44" type="passenger1" depart="475.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.47" type="passenger2a" depart="477.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoFR.49" type="passenger1" depart="483.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.44" type="passenger2b" depart="486.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8FRtoLU.47" type="passenger3" depart="488.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoBE.45" type="passenger2b" depart="489.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.46" type="passenger2a" depart="499.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.29" type="passenger2a" depart="499.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.48" type="passenger1" depart="505.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.49" type="passenger2b" depart="507.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.50" type="passenger3" depart="513.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoDE.49" type="passenger2b" depart="515.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8LUtoFR.52" type="passenger2b" depart="522.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8LUtoBE.49" type="passenger2a" depart="524.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.51" type="passenger3" depart="524.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8DEtoLU.52" type="passenger2a" depart="526.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8DEtoLU.55" type="passenger2a" depart="539.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoDE.51" type="passenger2a" depart="541.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8LUtoBE.51" type="passenger2a" depart="546.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8BEtoLU.35" type="passenger3" depart="548.46" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.57" type="passenger3" depart="557.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.53" type="passenger2a" depart="560.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8LUtoFR.53" type="passenger2a" depart="562.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+<vehicle id="8DEtoLU.59" type="passenger1" depart="562.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoDE.53" type="passenger2b" depart="571.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.61" type="passenger3" depart="572.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoDE.54" type="passenger2a" depart="572.85" departSpeed="max" departLane="best">
+        <route edges="-30668#12"/>
+    </vehicle>
+<vehicle id="8DEtoLU.62" type="passenger2b" depart="579.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8FRtoLU.55" type="passenger2a" depart="589.43" departSpeed="max" departLane="best">
+        <route edges="-30668#9-AddedOnRampEdge -30668#9"/>
+    </vehicle>
+<vehicle id="8DEtoLU.63" type="passenger1" depart="589.53" departSpeed="max" departLane="best">
+        <route edges="-31622#4"/>
+    </vehicle>
+<vehicle id="8LUtoFR.56" type="passenger1" depart="594.20" departSpeed="max" departLane="best">
+        <route edges="-31622#7"/>
+    </vehicle>
+</routes>

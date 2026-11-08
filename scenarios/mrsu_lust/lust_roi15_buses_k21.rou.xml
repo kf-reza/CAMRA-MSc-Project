@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+<vehicle id="mrsu_bus_AVL---_5_16" type="bus" depart="9.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="--32084#1 --32084#0 --32364#4 --32364#3 --32364#2 --32364#1 --32364#0 --32052 --31988 --30850#1 --30850#0 --32552#0 -30648#13 -30648#14 -30648#15 -31492#0 -31492#1 -30528#0 --32162#0 --31648#3 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_16_16" type="bus" depart="21.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-32278#1 -32278#2 -32278#3 -32278#4 -32278#5 -32278#6 --30620 --31068#1 --31068#0 -30528#2 -30528#3 -30528#4 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_1_16" type="bus" depart="21.98" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--32340#4 --32340#3 -32940#0 -32940#1 -32278#1 -32278#2 -32278#3 -32278#4 -32278#5 -32278#6 --30620 --31068#1 --31068#0 -30528#2 -30528#3 -30528#4 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_C80---_CFB_16" type="bus" depart="25.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-31068#1 -30620 --32278#6 --32278#5"/>
+    </vehicle>
+<vehicle id="nvx_bus_C80---_CFB_17" type="bus" depart="25.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-32278#5 -32278#6 --30620 --31068#1"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_17_16" type="bus" depart="26.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="--32750#12 --32750#11"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_13_16" type="bus" depart="28.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-30850#0 -30850#1 -30850#2 -30850#3 -30850#4 -30850#5 -30850#6 -30850#7 -30850#8 -30850#9 -31424 --30444#2 --30444#1 -32680 -32492#3 -32492#4 -30730#3 -30596#2 -31070#5 -31070#6 -32864#0 -32864#1 -30610#1 -32974#0 -32278#6 --30620 --31068#1 --31068#0 -32672 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_C82---_CFB_16" type="bus" depart="34.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-31068#1 -30620 --32278#6 --32278#5 --32278#4 --32278#3 --32278#2 --32278#1"/>
+    </vehicle>
+<vehicle id="mrsu_bus_C82---_CFB_17" type="bus" depart="34.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-32278#1 -32278#2 -32278#3 -32278#4 -32278#5 -32278#6 --30620 --31068#1"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_20_17" type="bus" depart="34.50" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-32924#0 -32924#1 -32924#2 -32924#3 -32924#4 --30528#6 --30528#5 --30528#4 --30528#3 --30528#2 --30528#1 --30528#0 -31492#2 --31686#1 -32592#0 -31686#0 -31686#1 --31648#5 --31648#4 --31648#3 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_RGM---_120_16" type="bus" depart="39.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-32278#1 -32278#2 -32278#3 -32278#4 -32278#5 -32278#6 --30620 --31068#1 --31068#0 -30528#2 -30528#3 -30528#4 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_2_17" type="bus" depart="42.00" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green">
+        <route edges="-30726 -32370 --30860#6 --30860#5 --30860#4 --30860#3 --30860#2 --31752 --31330 -30338 -31780 --31068#1 --31068#0 -32672 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_8_16" type="bus" depart="55.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 --30812 -31834#0 -31834#1 -31834#2"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_11_16" type="bus" depart="60.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 -31648#3 -32162#0 --30528#0 --31492#1 --31492#0 --30648#15 --30648#14 --30648#13 --30648#12 --30648#11 --30648#10 --30648#9 --30648#8 --30648#7 --30648#6"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_J2_16" type="bus" depart="61.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 --30812 -31834#0 -31834#1 -31834#2"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_23_16" type="bus" depart="63.44" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-31180#0 -31180#1 -32674#9 --31492#2 -30528#0 -30528#1 -30528#2 -30528#3 -30812 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_20_16" type="bus" depart="66.14" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 -31648#3 -31648#4 -31648#5 --31686#1 --31686#0 --32592#0 -31686#1 --31492#2 -30528#0 -30528#1 -30528#2 -30528#3 -30528#4 -30528#5 -30528#6 --32924#4 --32924#3 --32924#2 --32924#1 --32924#0"/>
+    </vehicle>
+<vehicle id="mrsu_bus_RGM---_120_17" type="bus" depart="71.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 --30528#4 --30528#3 --30528#2 -31068#0 -31068#1 -30620 --32278#6 --32278#5 --32278#4 --32278#3 --32278#2 --32278#1"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_11_17" type="bus" depart="76.71" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-30648#6 -30648#7 -30648#8 -30648#9 -30648#10 -30648#11 -30648#12 -30648#13 -30648#14 -30648#15 -31492#0 -31492#1 -30528#0 --32162#0 --31648#3 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_10_16" type="bus" depart="80.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 -31648#3 -32162#0 --30528#0 --31492#1 --31492#0 --30648#15 --30648#14 --30648#13 --30648#12 --30648#11 --30648#10 --30648#9 --30648#8 --30648#7 --30648#6"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_23_17" type="bus" depart="81.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 --30812 --30528#3 --30528#2 --30528#1 --30528#0 -31492#2 --32674#9 --31180#1 --31180#0"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_3_17" type="bus" depart="82.72" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30646#1 -31056#2 -31056#3 -30962#1 -30962#2 --31834#2 --31834#1 --31834#0 -30812 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_9_17" type="bus" depart="88.64" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 -31648#3 -31648#4 -31648#5 --32674#9 --32674#8 --32674#7 --32674#6 --32674#5 --32674#4 --32674#3"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_10_17" type="bus" depart="96.71" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-30648#6 -30648#7 -30648#8 -30648#9 -30648#10 -30648#11 -30648#12 -30648#13 -30648#14 -30648#15 -31492#0 -31492#1 -30528#0 --32162#0 --31648#3 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_14_16" type="bus" depart="122.05" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30756#2 --30756#1 --30756#0 --30856#10 --30856#9 -32966#0 -32966#1 -32966#2 -32966#3 -32966#4 -32966#5 -32966#6 -32966#7 -32966#8 -32966#9 --30856#6 --30856#5 --30856#4 --30856#3 --30856#2 --30856#1 --30856#0 -32674#7 -32674#8 -32674#9 --31648#5 --31648#4 --31648#3 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_17_17" type="bus" depart="124.44" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--32924#7 --32924#6 -30644#0 -32750#12"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_J1_17" type="bus" depart="136.27" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-32924#0 -32924#1 -32924#2 -32924#3 -32924#4 --30528#6 --30528#5 -31648#0 -31648#1 --30812 -30528#4 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_13_17" type="bus" depart="138.42" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 --32672 -31068#0 -31068#1 -30620 --32278#6 --32974#0 -30610#2 -31080#0 -31080#1 --31070#5 --30596#2 --30730#3 --32492#4 --32492#3 --32680 -30444#1 -30444#2 -31252 -30874#0 -30874#1 -30874#2 -30874#3 -30380 --30850#8 --30850#7 --30850#6 --30850#5 --30850#4 --30850#3 --30850#2 --30850#1 --30850#0"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_1_17" type="bus" depart="186.78" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 --30528#4 --30528#3 --30528#2 -31068#0 -31068#1 -30620 --32278#6 --32278#5 --32278#4 --32278#3 --32278#2 --32278#1 --32940#1 --32940#0 -32340#3 -32340#4"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_J1_16" type="bus" depart="206.99" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 --30528#4 -30812 --31648#1 --31648#0 -30528#5 -30528#6 --32924#4 --32924#3 --32924#2 --32924#1 --32924#0"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_9_16" type="bus" depart="226.84" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-32674#3 -32674#4 -32674#5 -32674#6 -32674#7 -32674#8 -32674#9 --31648#5 --31648#4 --31648#3 --31648#2 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_14_17" type="bus" depart="243.39" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 -31648#3 -31648#4 -31648#5 --32674#9 --32674#8 --32674#7 -30856#0 -30856#1 -30856#2 -30856#3 -30856#4 -30856#5 -30856#6 --32966#9 --32966#8 --32966#7 --32966#6 --32966#5 --32966#4 --32966#3 --32966#2 --32966#1 --32966#0 -30856#9 -30856#10 -30756#0 -30756#1 -30756#2"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_J2_17" type="bus" depart="281.90" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--31834#2 --31834#1 --31834#0 -30812 --31648#1 --31648#0 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_5_17" type="bus" depart="299.36" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 -31648#3 -32162#0 --30528#0 --31492#1 --31492#0 --30648#15 --30648#14 --30648#13 -32552#0 -30850#0 -30850#1 -31988 -32052 -32364#0 -32364#1 -32364#2 -32364#3 -32364#4 -32084#0 -32084#1"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_6_17" type="bus" depart="337.36" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 --32750#12 --32750#11"/>
+    </vehicle>
+<vehicle id="nvx_bus_AVL---_16_17" type="bus" depart="355.99" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 --30528#4 --30528#3 --30528#2 -31068#0 -31068#1 -30620 --32278#6 --32278#5 --32278#4 --32278#3 --32278#2 --32278#1"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_3_16" type="bus" depart="394.45" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 --30812 -31834#0 -31834#1 -30384#6 -30384#7 -30944 -30962#0 --31056#3 --31056#2 -30646#1"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_2_16" type="bus" depart="434.91" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="--30528#7 --30528#6 --30528#5 -31648#0 -31648#1 -31648#2 --32672 -31068#0 -31068#1 -32574 -31330 -32500 -32868 -30710#0 -30710#1 -30710#2 -31478#0 -31478#1 -30860#6 --32370 --30726"/>
+    </vehicle>
+<vehicle id="mrsu_bus_AVL---_6_16" type="bus" depart="475.51" departLane="best" departPos="0.00" arrivalPos="-1.00" color="green" departSpeed="max">
+        <route edges="-32750#11 -32750#12 -30528#5 -30528#6 -30528#7"/>
+    </vehicle>
+</routes>

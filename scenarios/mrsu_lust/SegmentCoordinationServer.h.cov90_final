@@ -1,0 +1,156 @@
+#ifndef SEGMENTCOORDINATIONSERVER_H_
+#define SEGMENTCOORDINATIONSERVER_H_
+
+#include <map>
+#include <set>
+#include <string>
+#include <vector>
+#include <fstream>
+
+struct SegmentCoordinationMessage
+{
+    int scmNumber = 0;
+    double timestamp = 0;
+    int activeMrsus = 0;
+    long totalExpected = 0;
+    long totalReceived = 0;
+    double segmentPDR = 0;
+    double segmentAvgDelay = 0;
+    double segmentAvgVelocity = 0;
+    double segmentAvgCbr = 0;
+	double segmentAwareness = 0;
+    long connectedVehicles = 0;
+    long totalVehicles = 0;
+    double coverage = 0;
+
+    // QoS feedback loop outputs
+    double e_pdr = 0;
+    double e_delay = 0;
+    double e_coverage = 0;
+    double gamma_pdr = 0;
+    double gamma_delay = 0;
+    double gamma_coverage = 0;
+    double qosError = 0;
+    std::string qosStatus; // "COMFORTABLE" / "MONITOR" / "INCREASE_RESOURCES"
+    std::string recommendedAction; // "NONE" / "ACTIVATE_1" / "SLEEP_1"
+    std::string recommendedTargetMrsu; // specific MRSU ID chosen for the action, or ""
+    std::string cbrStatus; // "UNDER_UTILIZED" / "NORMAL" / "CONGESTED" (informational only)
+};
+
+class SegmentCoordinationServerLuST
+{
+    public:
+        static SegmentCoordinationServerLuST& getInstance();
+
+        // NOTE: signature extended (vs. the pre-hotspot bremen3 version) with
+        // hotspotX/hotspotY/hotspotCount (this candidate's own locally-observed
+        // demand hotspot, computed by the caller from vehicles heard via CAM this
+        // window -- captured into MrsuReport but not currently read by the
+        // coverage-gap call-for-help logic below, which instead infers demand from
+        // the gap between active-MRSU positions) and selfX/selfY (this MRSU's own
+        // current position, REQUIRED by that coverage-gap search). Every call site
+        // must be updated to pass all five.
+            void reportSSM(const std::string& mrsuId, long expected, long received,
+                       double windowPDR, double avgDelay, double avgVelocity, double avgCbr,
+                       double avgAwareness,
+                       const std::vector<std::string>& connectedVehicleIds,
+                       const std::vector<std::string>& allVehicleIds,
+                       double hotspotX, double hotspotY, int hotspotCount,
+                       double selfX, double selfY, double now);
+
+        // Proactive blackout mitigation: each candidate reports, just before its SSM, an
+        // estimate of how many seconds it still has before it leaves the scenario.
+        // Separate call so reportSSM()'s signature (and every scenario's call site) stays unchanged.
+        void reportDeparture(const std::string& mrsuId, double secondsUntilDeparture);
+		
+        const SegmentCoordinationMessage& getLatestSCM() const;
+        bool isActive(const std::string& mrsuId) const;
+
+    private:
+        SegmentCoordinationServerLuST();
+        ~SegmentCoordinationServerLuST();
+
+        struct MrsuReport {
+            long expected = 0;
+            long received = 0;
+            double windowPDR = 0;
+            double avgDelay = 0;
+            double avgVelocity = 0;
+            double avgCbr = 0;
+            double avgAwareness = 0;
+            std::vector<std::string> connectedVehicleIds;
+            std::vector<std::string> allVehicleIds;
+            double hotspotX = 0;
+            double hotspotY = 0;
+            int hotspotCount = 0;
+            double selfX = 0;
+            double selfY = 0;
+            double lastUpdated = 0;
+			double secondsUntilDeparture = 1.0e9; // "unknown / not leaving" until reported
+            double departureReportedAt = 0;
+        };
+
+        std::map<std::string, MrsuReport> mLatestReports;
+        std::map<std::string, bool> mActiveState; // true = active, false = sleeping (default)
+		std::vector<std::string> mArrivalOrder;   // order candidates first reported, for STATIC_PERIODIC FCFS
+
+        double mLastAggregation = 0;
+        static constexpr double SCM_INTERVAL = 30.0;
+        int mScmNumber = 0;
+
+        // QoS targets (tunable)
+        static constexpr double PDR_TARGET = 0.90;
+        static constexpr double DELAY_TARGET = 0.10;      // seconds (100ms)
+        static constexpr double COVERAGE_TARGET = 0.90;
+        static constexpr double EPSILON = 0.01;             // avoids divide-by-zero in weighting
+
+        // QoS classification thresholds
+        static constexpr double E_COMFORTABLE = 0.10;   // classification ceiling for "comfortable"
+        static constexpr double E_MONITOR = 0.18;        // classification ceiling for "monitor"
+        static constexpr double E_SLEEP_THRESHOLD = 0.05; // stricter: only actually sleep below this, even within COMFORTABLE
+
+        // ---- coverage-primary mode (LuST test) ------------------------------------
+        // E is built from delay + coverage only. PDR and CBR are recorded, not part of E.
+        static constexpr double CBR_TARGET = 0.40;        // record-only
+        // PDR guard: a PDR drop only counts while PDR is below this level
+        static constexpr double PDR_ARM_LEVEL = 0.90;
+        static constexpr double PDR_DROP_MARGIN = 0.01;   // ignore PDR changes smaller than this
+        // only sleep an MRSU when coverage is comfortably above target (target + this margin)
+        static constexpr double SLEEP_COVERAGE_MARGIN = 0.00;
+        // never hold an activation while coverage is below this (coverage emergency)
+        static constexpr double HOLD_COVERAGE_FLOOR = 0.60;
+        static constexpr int PDR_STREAK_LIMIT = 2;        // activations in a row that worsened PDR -> hold
+        double mPrevPDR = -1.0;           // PDR of the previous SCM (-1 = none yet)
+        bool mLastWasActivate = false;    // previous SCM activated an MRSU
+        int mPdrDropStreak = 0;
+        bool mHoldActive = false;         // previous SCM was a PDR hold
+
+        // ---- proactive blackout mitigation (CAMRA mode only) -----------------------
+        // true  : if every active MRSU is about to leave the scenario, activate a
+        //         backup candidate BEFORE the blackout happens
+        // false : original behaviour (use for the reference runs / A-B comparison)
+        static constexpr bool ENABLE_PROACTIVE_BACKUP = true;
+        // "about to leave" = leaves within one SCM cycle plus one SSM interval (30 s + 10 s)
+        static constexpr double DEPARTURE_LOOKAHEAD = 40.0;
+        int mBackupActivations = 0;
+
+		// simulation strategy mode: change this one line to switch between comparison runs
+        enum class Strategy { CAMRA, ALWAYS_ACTIVE, FIXED_SINGLE, STATIC_PERIODIC };
+        static constexpr Strategy MODE = Strategy::CAMRA;
+		// STATIC_PERIODIC: first-come-first-served — the first candidate to ever report stays
+        // active until it leaves the simulation, then the next-arrived candidate takes over.
+        // No neighbour-count comparison, no QoS reaction — purely arrival-order driven.
+        // hysteresis state: track consecutive SCM cycles spent in the same zone
+        std::string mPreviousZone = "";
+        int mConsecutiveCount = 0;
+		double mPreviousError = 0;
+
+        SegmentCoordinationMessage mLastScm;
+
+        std::ofstream mCsvFile;
+		std::ofstream mCallForHelpFile;
+
+        void aggregateAndPublish(double now);
+};
+
+#endif /* SEGMENTCOORDINATIONSERVER_H_ */
