@@ -109,3 +109,23 @@ Artery (GPL-2.0), Vanetza, INET, OMNeT++ (Academic Public License), SUMO (EPL-2.
 ## Author and supervision
 
 Kazi Fahid Reza – supervised by Prof. Dr. Anna Förster, Dr.-Ing. Asanga Udugama and Dr. Thenuka Karunathilake, University of Bremen, ComNets.
+
+## LuST scenarios
+
+`scenarios/mrsu_lust/` contains two Luxembourg (LuST) variants:
+
+| Variant | SUMO config | Network and routes |
+|---|---|---|
+| 15 km2 region of interest (default) | `mrsu_lust.sumo.cfg` | `lust_roi15.net.xml`, `lust_roi15_*.rou.xml` |
+| 20.25 km2 segment | `mrsu_lust_segment20.sumo.cfg` | `lust_segment.net.xml`, `lust_segment_*.rou.xml` |
+
+The run scripts (`run_lust_*.sh`) always use `mrsu_lust.sumo.cfg`. To run the 20.25 km2 segment, copy its config over the default one first:
+
+```bash
+cd ~/artery/scenarios/mrsu_lust
+cp mrsu_lust.sumo.cfg mrsu_lust_roi15.sumo.cfg.keep      # keep the 15 km2 config
+cp mrsu_lust_segment20.sumo.cfg mrsu_lust.sumo.cfg
+./run_lust_segment_5runs.sh
+```
+
+Restore the 15 km2 config afterwards with `cp mrsu_lust_roi15.sumo.cfg.keep mrsu_lust.sumo.cfg`. The scripts `run_lust_roi15.sh` and `run_lust_k21_*.sh` belong to the 15 km2 variant.
