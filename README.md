@@ -1,6 +1,6 @@
 # CAMRA – Context-Aware Mobile RSU Allocation
 
-M.Sc. thesis project, University of Bremen, Communication Networks (ComNets).
+M.Sc. project, University of Bremen, Communication Networks (ComNets).
 CAMRA decides, window by window, **how many and which mobile roadside units (MRSUs: buses and trams carrying a radio unit) should be switched on** in a VANET scenario, so that the quality of service stays above a target while as few MRSUs as possible are active. It is implemented in [Artery](https://github.com/riebl/artery) (OMNeT++ / SUMO / Vanetza) on real Bremen (OpenStreetMap) and Luxembourg (LuST) traffic.
 
 ## How it works (short)
@@ -104,4 +104,4 @@ Artery (GPL-2.0), Vanetza, INET, OMNeT++ (Academic Public License), SUMO (EPL-2.
 
 ## Author and supervision
 
-Kazi Fahid Reza – supervised by Dr. Thenuka Karunathilake and Dr.-Ing. Asanga Udugama, University of Bremen, ComNets.
+Kazi Fahid Reza – supervised by Prof. Dr. Anna Förster, Dr.-Ing. Asanga Udugama and Dr. Thenuka Karunathilake, University of Bremen, ComNets.
