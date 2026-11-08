@@ -1,6 +1,6 @@
 # CAMRA – Context-Aware Mobile RSU Allocation
 
-M.Sc. project, University of Bremen, Communication Networks (ComNets).
+M.Sc. thesis project, University of Bremen, Communication Networks (ComNets).
 CAMRA decides, window by window, **how many and which mobile roadside units (MRSUs: buses and trams carrying a radio unit) should be switched on** in a VANET scenario, so that the quality of service stays above a target while as few MRSUs as possible are active. It is implemented in [Artery](https://github.com/riebl/artery) (OMNeT++ / SUMO / Vanetza) on real Bremen (OpenStreetMap) and Luxembourg (LuST) traffic.
 
 ## How it works (short)
@@ -43,7 +43,7 @@ patches/artery-src-changes.diff   changes to the Artery sources (VehicleControll
 tools/                         run / batch / analysis scripts
 env_versions.txt               software versions used for all results
 ```
-Luxembourg (LuST) scenarios: see the note at the end of this section.
+Luxembourg (LuST) scenarios: **not yet included**; they are added in a separate commit.
 
 ## Installation
 
@@ -55,16 +55,20 @@ Luxembourg (LuST) scenarios: see the note at the end of this section.
    git clone https://github.com/riebl/artery.git ~/artery
    cd ~/artery && git checkout 77c0938d3519a11d0642d4279e1471e0c196f733 && git submodule update --init --recursive
    ```
-5. **Apply the CAMRA patch** (adds the scenarios and all source changes):
+5. **Add the CAMRA scenarios and apply the source patch**
    ```bash
+   cd /path/to/this/repo
+   cp -r scenarios/mrsu_bremen2 scenarios/mrsu_bremen3 scenarios/mrsu_fullcity scenarios/bremen3_hotspot_patch ~/artery/scenarios/
+   gunzip -k ~/artery/scenarios/mrsu_fullcity/mrsu_fullcity.net.xml.gz   # the full-city network is stored compressed (the unpacked file is 293 MB)
    cd ~/artery
-   git apply --check /path/to/this/repo/patches/camra-artery.diff   # dry run
-   git apply /path/to/this/repo/patches/camra-artery.diff
+   git apply --check /path/to/this/repo/patches/artery-src-changes.diff   # dry run
+   git apply /path/to/this/repo/patches/artery-src-changes.diff
    ```
+   The patch also registers the new scenario folders in `scenarios/CMakeLists.txt`.
 6. **Build**
    ```bash
    mkdir -p build && cd build
-   cmake -DCMAKE_BUILD_TYPE=Release ..        ⟨add the WITH_* options from env_versions.txt⟩
+   cmake -DCMAKE_BUILD_TYPE=Release ..        # options used: WITH_INET=ON WITH_VEINS=ON WITH_ENVMOD=ON WITH_STORYBOARD=ON (others default/OFF)
    cmake --build . -j4
    ```
 
@@ -77,7 +81,7 @@ cd ~/artery/scenarios/mrsu_bremen3
 
 * Results (`scm_history_*.csv`, `communication_summary.csv`, ...) are written to `results/`.
 * **Batches with different seeds:** `tools/run_bremen3_batch.sh` (20 runs, seed-set 1000..1019, SUMO seed 50000..50019), `tools/run_fullcity_batch.sh`, `tools/run_lust_batch.sh`. Edit the paths at the top of each script. The CAMRA dynamic-threshold batch used seed-set `999+i` and SUMO seed `49999+i` for run `i` (1..30).
-* Strategy modes (CAMRA, Always-Active, Fixed-Single, Static-Periodic) are selected in `SegmentCoordinationServer.h` / `omnetpp.ini` ⟨state exactly how⟩.
+* Strategy modes (CAMRA, Always-Active, Fixed-Single, Static-Periodic) are selected in `SegmentCoordinationServer.h` / `omnetpp.ini`.
 
 ## Evaluating results
 
@@ -100,7 +104,7 @@ Metrics: quality `Q = 1 − mean(QoS error)` (cold-start window excluded); a *bl
 
 ## Credits and licences
 
-Artery (GPL-2.0), Vanetza, INET, OMNeT++ (Academic Public License), SUMO (EPL-2.0), LuST scenario ⟨citation⟩, OpenStreetMap contributors (ODbL). ⟨CAMRA licence – choose⟩
+Artery (GPL-2.0), Vanetza, INET, OMNeT++ (Academic Public License), SUMO (EPL-2.0), the LuST scenario (Codeça et al., 2015), OpenStreetMap contributors (ODbL).
 
 ## Author and supervision
 
