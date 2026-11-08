@@ -1,0 +1,8 @@
+results*/
+*.sca
+*.vec
+*.vci
+*.o
+*.o.d
+__pycache__/
+*Zone.Identifier

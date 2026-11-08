@@ -1,0 +1,181 @@
+
+== date
+2026-11-08T12:53:17+01:00
+
+== os-release
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+VERSION="24.04.4 LTS (Noble Numbat)"
+
+== kernel / wsl
+6.18.54.1-microsoft-standard-WSL2
+3.0.3.0
+
+== compilers/build tools
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+cmake version 3.28.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+GNU Make 4.3
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2020 Free Software Foundation, Inc.
+/mnt/d/Uni_Bremen/E-Learning/Project/CAMRA/New Camra/github_prep/collect_for_github.sh: line 17: ninja: command not found
+git version 2.43.0
+Python 3.12.3
+pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)
+
+== OMNeT++
+OMNETPP_ROOT=<unset>
+/home/fahid/omnetpp-5.6.2/bin/opp_run
+OMNeT++ Discrete Event Simulation  (C) 1992-2019 Andras Varga, OpenSim Ltd.
+Version: 5.6.2, build: 200518-aa79d0918f, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+
+== SUMO
+SUMO_HOME=/usr/share/sumo
+/usr/bin/sumo
+Eclipse SUMO sumo 1.27.1
+ Build features: Linux-6.8.0-117-generic x86_64 GNU 13.3.0 Release FMI Proj GUI Intl SWIG Eigen GDAL GL2PS
+
+== python packages
+matplotlib          3.11.1
+numpy               2.5.2
+pandas              3.0.5
+pillow              12.3.0
+traci 1.27.1
+libsumo 1.27.1
+sumolib 1.27.1
+numpy 2.5.2
+pandas 3.0.5
+scipy NOT IMPORTABLE: ModuleNotFoundError
+matplotlib 3.11.1
+
+== system libraries (dpkg)
+bison 2:3.8.2+dfsg-1ubuntu0.24.04.1
+flex 2.6.4-8.2build1
+sumo 1.27.1-1
+sumo-doc 1.27.1-1
+sumo-tools 1.27.1-1
+
+== Artery repository
+path: /home/fahid/artery
+HEAD: 77c0938d3519a11d0642d4279e1471e0c196f733
+describe: 77c0938d
+branch: master
+last commit: 2026-05-14 13:03:01 +0200  implement maxspeed methods for vehicle mobility
+origin	https://github.com/riebl/artery.git (fetch)
+origin	https://github.com/riebl/artery.git (push)
+
+== Artery submodules (INET / Vanetza / Veins / pybind11 ...)
+ 7456cc54f5576de1485c24c4ba303d0226a53582 extern/inet (v2.6.0-3786-g7456cc54f)
+ f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8 extern/pybind11 (v3.0.1)
+ d888777db7fa76b6d624d1d161038ccc278192ab extern/sim0mqpp (heads/master)
+ d7373cadac93c26ca9a975ff3aab689dee3fc2eb extern/simulte (v1.1.0-3-gd7373ca)
+ 6a6cae6256456fbe3cf57addddcb0ed99fd9502b extern/vanetza (v25.06-10-g6a6cae62)
+ 333c4f0a6e8426a6b9e811923f4f49e3153ddf74 extern/veins (veins-5.1)
+ 9f327b8d0dc4169450c4bffdb1c23913b6b6f799 scenarios/mt-its2017 (9f327b8)
+-- extern/inet : v3.5.0-589-g7456cc54f  remote: https://github.com/riebl/inet.git
+-- extern/pybind11 : v3.0.1  remote: https://github.com/pybind/pybind11.git
+-- extern/sim0mqpp : d888777  remote: https://github.com/riebl/sim0mqpp.git
+-- extern/simulte : artery/20200711  remote: https://github.com/riebl/simulte.git
+-- extern/vanetza : v25.06-10-g6a6cae62  remote: https://github.com/riebl/vanetza.git
+-- extern/veins : veins-5.1  remote: https://github.com/sommer/veins.git
+-- scenarios/mt-its2017 : 9f327b8  remote: https://github.com/riebl/artery_scenario_mt-its2017.git
+
+== Artery CMake configuration
+Boost_INCLUDE_DIR:PATH=/usr/include
+CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+OMNETPP_CMDENV_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppcmdenv_dbg.so
+OMNETPP_CMDENV_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppcmdenv.so
+OMNETPP_COMMON_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppcommon_dbg.so
+OMNETPP_COMMON_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppcommon.so
+OMNETPP_ENVIR_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppenvir_dbg.so
+OMNETPP_ENVIR_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppenvir.so
+OMNETPP_EVENTLOG_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppeventlog_dbg.so
+OMNETPP_EVENTLOG_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppeventlog.so
+OMNETPP_INCLUDE_DIR:PATH=/home/fahid/omnetpp-5.6.2/include
+OMNETPP_LAYOUT_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/libopplayout_dbg.so
+OMNETPP_LAYOUT_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/libopplayout.so
+OMNETPP_MAIN_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppmain_dbg.a
+OMNETPP_MAIN_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppmain.a
+OMNETPP_MSGC:FILEPATH=/home/fahid/omnetpp-5.6.2/bin/opp_msgc
+OMNETPP_NEDXML_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppnedxml_dbg.so
+OMNETPP_NEDXML_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppnedxml.so
+OMNETPP_ROOT:PATH=/home/fahid/omnetpp-5.6.2
+OMNETPP_RUN:FILEPATH=/home/fahid/omnetpp-5.6.2/bin/opp_run_release
+OMNETPP_RUNALL:FILEPATH=/home/fahid/omnetpp-5.6.2/bin/opp_runall
+OMNETPP_RUN_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/bin/opp_run_dbg
+OMNETPP_SCAVE_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppscave_dbg.so
+OMNETPP_SCAVE_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppscave.so
+OMNETPP_SIM_LIBRARY_DEBUG:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppsim_dbg.so
+OMNETPP_SIM_LIBRARY_RELEASE:FILEPATH=/home/fahid/omnetpp-5.6.2/lib/liboppsim.so
+OMNETPP_TKENV_LIBRARY_DEBUG:FILEPATH=OMNETPP_TKENV_LIBRARY_DEBUG-NOTFOUND
+OMNETPP_TKENV_LIBRARY_RELEASE:FILEPATH=OMNETPP_TKENV_LIBRARY_RELEASE-NOTFOUND
+WITH_ENVMOD:BOOL=ON
+WITH_INET:BOOL=ON
+WITH_OTS:BOOL=OFF
+WITH_SCENARIOS:BOOL=ON
+WITH_SIMULTE:BOOL=OFF
+WITH_STORYBOARD:BOOL=ON
+WITH_TESTBED:BOOL=OFF
+WITH_TRANSFUSION:BOOL=OFF
+WITH_VEINS:BOOL=ON
+CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;MinSizeRel;RelWithDebInfo
+OMNETPP_CMDENV_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_CMDENV_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_COMMON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_COMMON_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_ENVIR_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_ENVIR_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_EVENTLOG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_EVENTLOG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_INCLUDE_DIR-ADVANCED:INTERNAL=1
+OMNETPP_LAYOUT_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_LAYOUT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_MAIN_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_MSGC-ADVANCED:INTERNAL=1
+OMNETPP_NEDXML_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_NEDXML_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_ROOT-ADVANCED:INTERNAL=1
+OMNETPP_RUN-ADVANCED:INTERNAL=1
+OMNETPP_RUN_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_SCAVE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_SCAVE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_SIM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_SIM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+OMNETPP_TKENV_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+OMNETPP_TKENV_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+
+== scenarios present
+CMakeLists.txt
+artery
+bremen3_hotspot_patch
+bremen3_hotspot_patch.zip:Zone.Identifier
+car2car-grid
+commands.txt
+envmod
+gemv2
+highway-police
+lte-blackice
+mrsu
+mrsu2
+mrsu22
+mrsu_bremen2
+mrsu_bremen3
+mrsu_fullcity
+mt-its2017
+ots-demo
+rsu_grid
+simulte
+storyboard
+test
+testbed
+transfusion
+
+== CAMRA run targets in build

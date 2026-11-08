@@ -1,0 +1,69 @@
+nohup: ignoring input
+Header check passed: E_MONITOR=0.22, MODE=CAMRA.
+
+=== Starting 20 CAMRA runs of bremen3 (E_MONITOR=0.22) ===
+Results will land in: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22
+
+[run 1/20] starting — seed-set=1000, sumo-seed=50000 ...
+[run 1/20] done in 1182s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run1 results
+
+[run 2/20] starting — seed-set=1001, sumo-seed=50001 ...
+[run 2/20] done in 938s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run2 results
+
+[run 3/20] starting — seed-set=1002, sumo-seed=50002 ...
+[run 3/20] done in 993s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run3 results
+
+[run 4/20] starting — seed-set=1003, sumo-seed=50003 ...
+[run 4/20] done in 988s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run4 results
+
+[run 5/20] starting — seed-set=1004, sumo-seed=50004 ...
+[run 5/20] done in 928s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run5 results
+
+[run 6/20] starting — seed-set=1005, sumo-seed=50005 ...
+[run 6/20] done in 920s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run6 results
+
+[run 7/20] starting — seed-set=1006, sumo-seed=50006 ...
+[run 7/20] done in 883s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run7 results
+
+[run 8/20] starting — seed-set=1007, sumo-seed=50007 ...
+[run 8/20] done in 923s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run8 results
+
+[run 9/20] starting — seed-set=1008, sumo-seed=50008 ...
+[run 9/20] done in 886s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run9 results
+
+[run 10/20] starting — seed-set=1009, sumo-seed=50009 ...
+[run 10/20] done in 915s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run10 results
+
+[run 11/20] starting — seed-set=1010, sumo-seed=50010 ...
+[run 11/20] done in 910s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run11 results
+
+[run 12/20] starting — seed-set=1011, sumo-seed=50011 ...
+[run 12/20] done in 909s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run12 results
+
+[run 13/20] starting — seed-set=1012, sumo-seed=50012 ...
+[run 13/20] done in 900s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run13 results
+
+[run 14/20] starting — seed-set=1013, sumo-seed=50013 ...
+[run 14/20] done in 906s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run14 results
+
+[run 15/20] starting — seed-set=1014, sumo-seed=50014 ...
+[run 15/20] done in 907s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run15 results
+
+[run 16/20] starting — seed-set=1015, sumo-seed=50015 ...
+[run 16/20] done in 912s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run16 results
+
+[run 17/20] starting — seed-set=1016, sumo-seed=50016 ...
+[run 17/20] done in 918s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run17 results
+
+[run 18/20] starting — seed-set=1017, sumo-seed=50017 ...
+[run 18/20] done in 932s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run18 results
+
+[run 19/20] starting — seed-set=1018, sumo-seed=50018 ...
+[run 19/20] done in 942s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run19 results
+
+[run 20/20] starting — seed-set=1019, sumo-seed=50019 ...
+[run 20/20] done in 913s — saved to: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22/run20 results
+
+=== All 20 runs complete. Check: /mnt/d/Uni_Bremen/E-Learning/Project/Simulation/batch results/CAMRA E_Monitor 22 ===
+Failed/incomplete runs: 0
+Seed mismatches: 0

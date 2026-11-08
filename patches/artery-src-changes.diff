@@ -1,0 +1,84 @@
+diff --git a/scenarios/CMakeLists.txt b/scenarios/CMakeLists.txt
+index d86d3a3c..88c88c6a 100644
+--- a/scenarios/CMakeLists.txt
++++ b/scenarios/CMakeLists.txt
+@@ -1,4 +1,11 @@
+ add_subdirectory(artery)
++add_subdirectory(mrsu)
++add_subdirectory(test)
++add_subdirectory(mrsu2)
++add_subdirectory(mrsu22)
++add_subdirectory(mrsu_bremen2)
++add_subdirectory(mrsu_bremen3)
++add_subdirectory(mrsu_fullcity)
+ 
+ add_subdirectory(gemv2)
+ add_subdirectory(highway-police)
+diff --git a/src/artery/traci/VehicleController.cc b/src/artery/traci/VehicleController.cc
+index 85f27d6a..c463c71f 100755
+--- a/src/artery/traci/VehicleController.cc
++++ b/src/artery/traci/VehicleController.cc
+@@ -1,4 +1,5 @@
+ #include "artery/traci/VehicleController.h"
++#include <libsumo/TraCIDefs.h>
+ 
+ namespace si = boost::units::si;
+ 
+@@ -33,9 +34,18 @@ const std::string VehicleController::getVehicleClass() const
+ 
+ auto VehicleController::getMaxSpeed() const -> Velocity
+ {
+-    return m_cache->get<libsumo::VAR_MAXSPEED>() * si::meter_per_second;
++    try {
++        return m_cache->get<libsumo::VAR_MAXSPEED>() * si::meter_per_second;
++    }
++    catch (const libsumo::TraCIException& e) {
++        // vehicle may have already left the simulation (e.g. queried during
++        // another vehicle's teardown, via INET's RadioMedium::removeRadio ->
++        // MediumLimitCache::updateLimits scanning all registered radios)
++        return 0.0 * si::meter_per_second;
++    }
+ }
+ 
++
+ void VehicleController::setMaxSpeed(Velocity v)
+ {
+     m_traci->vehicle.setMaxSpeed(getId(), v / si::meter_per_second);
+diff --git a/src/traci/BasicNodeManager.cc b/src/traci/BasicNodeManager.cc
+index 9967b728..bbb6fe64 100644
+--- a/src/traci/BasicNodeManager.cc
++++ b/src/traci/BasicNodeManager.cc
+@@ -167,13 +167,18 @@ void BasicNodeManager::processVehicles()
+ void BasicNodeManager::addVehicle(const std::string& id)
+ {
+     NodeInitializer init = [this, &id](cModule* module) {
+-        VehicleSink* vehicle = getVehicleSink(module);
+-        auto& traci = m_api->vehicle;
+-        vehicle->initializeSink(m_api, m_subscriptions->getVehicleCache(id), m_boundary);
+-        vehicle->initializeVehicle(traci.getPosition(id), TraCIAngle { traci.getAngle(id) }, traci.getSpeed(id));
+-        m_vehicles[id] = vehicle;
++        try {
++            VehicleSink* vehicle = getVehicleSink(module);
++            auto& traci = m_api->vehicle;
++            vehicle->initializeSink(m_api, m_subscriptions->getVehicleCache(id), m_boundary);
++            vehicle->initializeVehicle(traci.getPosition(id), TraCIAngle { traci.getAngle(id) }, traci.getSpeed(id));
++            m_vehicles[id] = vehicle;
++        }
++        catch (const libsumo::TraCIException& e) {
++            EV_WARN << "TraCI: vehicle " << id << " disappeared during insertion, skipping: " << e.what() << endl;
++            m_vehicles[id] = nullptr;
++        }
+     };
+-
+     emit(addVehicleSignal, id.c_str());
+     cModuleType* type = m_mapper->vehicle(*this, id);
+     if (type != nullptr) {
+@@ -183,6 +188,8 @@ void BasicNodeManager::addVehicle(const std::string& id)
+     }
+ }
+ 
++
++
+ void BasicNodeManager::removeVehicle(const std::string& id)
+ {
+     emit(removeVehicleSignal, id.c_str());

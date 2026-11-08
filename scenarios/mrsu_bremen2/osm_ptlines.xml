@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-08-08T23:37:40.592241+01:00 by Eclipse SUMO netconvert 1.27.1
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertShips.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+        <ptline-clean-up value="true"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</netconvertConfiguration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10440731" name="Bus N3: Rablinghausen =&gt; Vorstraße" line="N3" type="bus" vClass="bus" nightService="yes" color="0,144,53" completeness="0.09" missingBefore="37" missingAfter="3">
+        <route edges="4243552 329761274#1 29117609#1 29117609#2 29117609#3 428260943 428260945#1 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 13661830#1 23594650#0 23594650#1 23594650#2 23594650#3 30971967#3"/>
+        <busStop id="667425961" name="Wiener Straße"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="776070259" name="Lise-Meitner-Straße"/>
+        <busStop id="766862373" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="10440732" name="Bus N3: Schweizer Eck =&gt; Rablinghausen" line="N3" type="bus" vClass="bus" nightService="yes" color="0,144,53" completeness="0.05" missingBefore="37" missingAfter="38">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 56043685#1 56043685#2 189004527"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425973" name="Universität-Süd"/>
+        <busStop id="667425962" name="Wiener Straße"/>
+    </ptLine>
+    <ptLine id="107097" name="Bus 670: Osterholz-Scharmbeck =&gt; Bremen" line="670" type="bus" vClass="bus" completeness="0.04" missingBefore="48" missingAfter="3">
+        <route edges="303801445 303801446 301063493 204547977 189404148#0 14327757#2 204549621#0 204549623 204549625 204549624 24798229#1 24798229#6 428260942 428260946#0 56043685#1 56043685#2 189004527"/>
+        <busStop id="3185144503" name="Hochschulring"/>
+        <busStop id="667425973" name="Universität-Süd"/>
+    </ptLine>
+    <ptLine id="107098" name="630: Zeven =&gt; Bremen" line="630" type="bus" vClass="bus" completeness="0.08" missingBefore="18" missingAfter="3">
+        <route edges="303801445 303801446 301063493 204547977 189404148#0 14327757#2 204549621#0 204549623 204549625 204549624 24798229#1 24798229#6 428260942 428260946#0 56043685#1 56043685#2 189004527"/>
+        <busStop id="3185144503" name="Hochschulring"/>
+        <busStop id="667425973" name="Universität-Süd"/>
+    </ptLine>
+    <ptLine id="16748866" name="Bus 31: Nedderland =&gt; Horn =&gt; Universität =&gt; Borgfeld Ost" line="31" type="bus" vClass="bus" nightService="no" color="149,193,31" completeness="0.11" missingBefore="23" missingAfter="22">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5 200194941 56040517#0 56040517#4 896729862 170109147 170109150 292098348 204547975 -204547976 693974678 240792945#2 303801444 301063495"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+        <busStop id="2554663779" name="Linzer Straße"/>
+    </ptLine>
+    <ptLine id="18491727" name="Bus 21: Sebaldsbrück =&gt; Universität-Nord" line="21" type="bus" vClass="bus" period="900" nightService="no" color="0,159,227" completeness="0.16" missingBefore="23" missingAfter="1">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+    </ptLine>
+    <ptLine id="18491729" name="Bus 21: Universität-Nord =&gt; Sebaldsbrück" line="21" type="bus" vClass="bus" period="900" nightService="no" color="0,159,227" completeness="0.17" missingAfter="23">
+        <route edges="200194940#0 200194940#1 118174957#1 -251393873#1 -251393873#0 -251393872#2 -251393872#0 -4041686#0 -323961099 -56040519 -1347601001 56041150#0 189004526#0 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 13661830#1 23594650#0 23594650#1 23594650#2 23594650#3 30971967#3"/>
+        <busStop id="667425990" name="Universität-Nord"/>
+        <busStop id="-20980475" name="Universität/Zentralbereich"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="776070259" name="Lise-Meitner-Straße"/>
+        <busStop id="766862373" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="18495422" name="Bus 28: Überseestadt-Nord =&gt; Universität-Nord" line="28" type="bus" vClass="bus" color="255,204,0" completeness="0.03" missingBefore="38" missingAfter="1">
+        <route edges="200194940#0 200194940#1 189404173#0 189404173#2 863004829 292804814#1 292804814#2 292804814#3 292804814#5"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+    </ptLine>
+    <ptLine id="19537005" name="Bus 23: Universität =&gt; Huckelriede" line="23" type="bus" vClass="bus" completeness="0.10" missingAfter="41">
+        <route edges="200194940#0 200194940#1 118174957#1 -251393873#1 -251393873#0 -251393872#2 -251393872#0 -4041686#0 -323961099 -56040519 -1347601001 56041150#0 189004526#0 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 13661830#1 23594650#0 23594650#1 23594650#2 23594650#3 30971967#3"/>
+        <busStop id="667425990" name="Universität-Nord"/>
+        <busStop id="-20980475" name="Universität/Zentralbereich"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="776070259" name="Lise-Meitner-Straße"/>
+        <busStop id="766862373" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="19537006" name="Bus 23: Huckelriede =&gt; Universität" line="23" type="bus" vClass="bus" completeness="0.10" missingBefore="42" missingAfter="1">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+    </ptLine>
+    <ptLine id="19914" name="Tram 6: Flughafen-Süd =&gt; Universität-Nord" line="6" type="tram" vClass="tram" period="600" nightService="no" color="255,204,0" completeness="0.20" missingBefore="20">
+        <route edges="251393900#0 251393900#1 251393900#5 251393900#6 251393900#9 251393900#11 251393900#13 251393900#14 251393900#15 1334228330#0 1334228330#1 1305459769#2 1334228335#1 1334228335#2 1305459768#0 1305459768#1"/>
+        <busStop id="766862382" name="Berufsbildungswerk"/>
+        <busStop id="766862401" name="Lise-Meitner-Straße"/>
+        <busStop id="21530451" name="Universität-Süd"/>
+        <busStop id="2576185928" name="Universität/Zentralbereich"/>
+        <busStop id="773271748" name="Universität-Nord"/>
+    </ptLine>
+    <ptLine id="2179661" name="630: Bremen =&gt; Zeven" line="630" type="bus" vClass="bus" completeness="0.04" missingBefore="3" missingAfter="20">
+        <route edges="4243552 329761274#1 29117609#1 29117609#2 29117609#3 428260943 428260945#1 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 4008937#3 204549620 204549619#1 204549622#0 240792945#2 303801444 301063495"/>
+        <busStop id="3185144505" name="Hochschulring"/>
+    </ptLine>
+    <ptLine id="2559077" name="Bus 31: Borgfeld-Ost =&gt; Universität =&gt; Horn =&gt; Nedderland" line="31" type="bus" vClass="bus" nightService="no" color="149,193,31" completeness="0.14" missingBefore="21" missingAfter="12">
+        <route edges="303801445 303801446 301063493 204547977 189404148#0 189404163 248717007 248717009 292098351 -170109147 -896729862 -56040517#4 -56040517#2 200194940#0 200194940#1 118174957#1 -251393873#1 -251393873#0 -251393872#2 -251393872#0 -4041686#0 -323961099 -56040519 -1347601001 56041150#0 189004526#0 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 13661830#1 23594650#0 23594650#1 23594650#2 23594650#3 30971967#3"/>
+        <busStop id="667425992" name="Linzer Straße"/>
+        <busStop id="667425990" name="Universität-Nord"/>
+        <busStop id="-20980475" name="Universität/Zentralbereich"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="776070259" name="Lise-Meitner-Straße"/>
+        <busStop id="766862373" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="2563060" name="Bus 31: Horn =&gt; Borgfeld-Ost" line="31" type="bus" vClass="bus" nightService="no" color="149,193,31" completeness="0.17" missingBefore="3" missingAfter="22">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5 200194941 56040517#0 56040517#4 896729862 170109147 170109150 292098348 204547975 -204547976 693974678 240792945#2 303801444 301063495"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+        <busStop id="2554663779" name="Linzer Straße"/>
+    </ptLine>
+    <ptLine id="2564907" name="Bus 28: Überseestadt-Nord =&gt; Universität-Nord" line="28" type="bus" vClass="bus" color="255,204,0" completeness="0.11" missingBefore="38" missingAfter="1">
+        <route edges="-4597209#1 -4597209#0 24554328#0 24554328#2 24554328#3 24554328#6 24554411#0 24554411#1 24554411#3 24554411#4 24554411#5 24554411#6 230864491 29117609#1 29117609#2 29117609#3 428260943 428260945#1 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5"/>
+        <busStop id="786791846" name="Celsiusstraße"/>
+        <busStop id="667425961" name="Wiener Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+    </ptLine>
+    <ptLine id="2881912" name="Bus N3: Bahnhof Mahndorf =&gt; Rablinghausen" line="N3" type="bus" vClass="bus" nightService="yes" color="0,144,53" completeness="0.04" missingBefore="48" missingAfter="38">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 56043685#1 56043685#2 189004527"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425973" name="Universität-Süd"/>
+        <busStop id="667425962" name="Wiener Straße"/>
+    </ptLine>
+    <ptLine id="2881913" name="Bus N3: Rablinghausen =&gt; Bahnhof Mahndorf" line="N3" type="bus" vClass="bus" nightService="yes" color="0,144,53" completeness="0.04" missingBefore="37" missingAfter="53">
+        <route edges="4243552 329761274#1 29117609#1 29117609#2 29117609#3 428260943 428260945#1 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 13661830#1 23594650#0 23594650#1 23594650#2 23594650#3 30971967#3"/>
+        <busStop id="667425961" name="Wiener Straße"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="776070259" name="Lise-Meitner-Straße"/>
+        <busStop id="766862373" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="32688" name="Bus 28: Universität-Nord =&gt; Überseestadt-Nord" line="28" type="bus" vClass="bus" color="255,204,0" completeness="0.11" missingAfter="39">
+        <route edges="200194940#0 200194940#1 118174957#1 -251393873#1 -251393873#0 -251393872#2 -251393872#0 -4041686#0 -323961099 -56040519 -1347601001 56041150#0 189004526#0 56043685#1 56043685#2 -230864493#0 -24554411#6 -24554411#5 -24554411#4 -24554411#3 -24554411#1 -24554411#0 4597212#0 4597212#2 4597212#3 4597212#4 4597212#5 4597209#0 4597209#1"/>
+        <busStop id="667425990" name="Universität-Nord"/>
+        <busStop id="-20980475" name="Universität/Zentralbereich"/>
+        <busStop id="667425973" name="Universität-Süd"/>
+        <busStop id="667425962" name="Wiener Straße"/>
+        <busStop id="786791897" name="Celsiusstraße"/>
+    </ptLine>
+    <ptLine id="3933216" name="Bus 670: Bremen =&gt; Osterholz-Scharmbeck" line="670" type="bus" vClass="bus" completeness="0.04" missingBefore="3" missingAfter="48">
+        <route edges="4243552 329761274#1 29117609#1 29117609#2 29117609#3 428260943 428260945#1 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 4008937#3 204549620 204549619#1 204549622#0 240792945#2 303801444 301063495"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="3185144505" name="Hochschulring"/>
+    </ptLine>
+    <ptLine id="571200" name="Bus 22: Kattenturm-Mitte =&gt; Universität-Ost" line="22" type="bus" vClass="bus" period="900" nightService="no" color="166,157,205" completeness="0.14" missingBefore="32" missingAfter="1">
+        <route edges="4243552 329761274#1 29117609#1 29117609#2 29117609#3 428260943 428260945#1 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5 200194941 56040517#0 56040517#4 896729862 170109147 170109150 292098348 204547975 -204547976 693974678 4066295#0 56041077 -248717011 4281672"/>
+        <busStop id="667425961" name="Wiener Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+        <busStop id="2554663779" name="Linzer Straße"/>
+        <busStop id="666961396" name="Universität-Ost"/>
+    </ptLine>
+    <ptLine id="571201" name="Bus 22: Universität-Ost =&gt; Kattenturm-Mitte" line="22" type="bus" vClass="bus" period="900" nightService="no" color="166,157,205" completeness="0.14" missingAfter="33">
+        <route edges="4281673 -56041077 469276254 155570492#0 189404163 248717007 248717009 292098351 -170109147 -896729862 -56040517#4 -56040517#2 200194940#0 200194940#1 118174957#1 -251393873#1 -251393873#0 -251393872#2 -251393872#0 -4041686#0 -323961099 -56040519 -1347601001 56041150#0 189004526#0 56043685#1 56043685#2 189004527"/>
+        <busStop id="667425995" name="Universität-Ost"/>
+        <busStop id="667425992" name="Linzer Straße"/>
+        <busStop id="667425990" name="Universität-Nord"/>
+        <busStop id="-20980475" name="Universität/Zentralbereich"/>
+        <busStop id="667425973" name="Universität-Süd"/>
+        <busStop id="667425962" name="Wiener Straße"/>
+    </ptLine>
+    <ptLine id="6251920" name="Tram 6E: Universität-Nord =&gt; BSAG-Zentrum" line="6" type="tram" vClass="tram" nightService="no" color="255,204,0" completeness="0.23" missingAfter="17">
+        <route edges="1305459766#0 1305459766#1 1305459766#2 1334228333#0 1334228333#1 1334228333#2 1305459767#1 1305459767#2 1334228331#1 251393901#0 251393901#1 251393901#4 251393901#6 251393901#9 251393901#10 251393901#14 251393901#15"/>
+        <busStop id="773271739" name="Universität-Nord"/>
+        <busStop id="2576185927" name="Universität/Zentralbereich"/>
+        <busStop id="766862396" name="Universität-Süd"/>
+        <busStop id="766862390" name="Lise-Meitner-Straße"/>
+        <busStop id="766862392" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="71215" name="Bus 21: Universität-Nord =&gt; Bottroper Straße" line="21" type="bus" vClass="bus" period="900" nightService="no" color="0,159,227" completeness="0.12" missingAfter="34">
+        <route edges="200194940#0 200194940#1 118174957#1 -251393873#1 -251393873#0 -251393872#2 -251393872#0 -4041686#0 -323961099 -56040519 -1347601001 56041150#0 189004526#0 33557890#1 33557890#6 33557890#7 33557890#8 428260948#0 428260948#1 13661830#1 23594650#0 23594650#1 23594650#2 23594650#3 30971967#3"/>
+        <busStop id="667425990" name="Universität-Nord"/>
+        <busStop id="-20980475" name="Universität/Zentralbereich"/>
+        <busStop id="667425986" name="Universität-Süd"/>
+        <busStop id="776070259" name="Lise-Meitner-Straße"/>
+        <busStop id="766862373" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="963100" name="Tram 6: Universität-Nord =&gt; Flughafen-Süd" line="6" type="tram" vClass="tram" period="600" nightService="no" color="255,204,0" completeness="0.20" missingAfter="20">
+        <route edges="1305459766#0 1305459766#1 1305459766#2 1334228333#0 1334228333#1 1334228333#2 1305459767#1 1305459767#2 1334228331#1 251393901#0 251393901#1 251393901#4 251393901#6 251393901#9 251393901#10 251393901#14 251393901#15"/>
+        <busStop id="773271739" name="Universität-Nord"/>
+        <busStop id="2576185927" name="Universität/Zentralbereich"/>
+        <busStop id="766862396" name="Universität-Süd"/>
+        <busStop id="766862390" name="Lise-Meitner-Straße"/>
+        <busStop id="766862392" name="Berufsbildungswerk"/>
+    </ptLine>
+    <ptLine id="967281" name="Bus 21: Bottroper Straße =&gt; Universität-Nord" line="21" type="bus" vClass="bus" period="900" nightService="no" color="0,159,227" completeness="0.11" missingBefore="35" missingAfter="1">
+        <route edges="-30971967#3 -23594650#3 -23594650#2 -23594650#1 -23594650#0 428260944 4243551#0 24798229#1 24798229#6 428260942 428260946#0 86865230#1 86860823 1315971785#0 56040519 323961099 4041686#0 4041686#1 251393872#2 251393873#0 251393873#1 863004829 292804814#1 292804814#2 292804814#3 292804814#5"/>
+        <busStop id="-20980464" name="Berufsbildungswerk"/>
+        <busStop id="776070188" name="Lise-Meitner-Straße"/>
+        <busStop id="667425974" name="Universität-Süd"/>
+        <busStop id="667425988" name="Universität/Zentralbereich"/>
+        <busStop id="667425991" name="Universität-Nord"/>
+    </ptLine>
+    <ptLine id="9979973" name="Tram 6: BSAG-Zentrum =&gt; Universität-Nord" line="6" type="tram" vClass="tram" nightService="no" color="255,204,0" completeness="0.23" missingBefore="17">
+        <route edges="251393900#0 251393900#1 251393900#5 251393900#6 251393900#9 251393900#11 251393900#13 251393900#14 251393900#15 1334228330#0 1334228330#1 1305459769#2 1334228335#1 1334228335#2 1305459768#0 1305459768#1"/>
+        <busStop id="766862382" name="Berufsbildungswerk"/>
+        <busStop id="766862401" name="Lise-Meitner-Straße"/>
+        <busStop id="21530451" name="Universität-Süd"/>
+        <busStop id="2576185928" name="Universität/Zentralbereich"/>
+        <busStop id="773271748" name="Universität-Nord"/>
+    </ptLine>
+</ptLines>
